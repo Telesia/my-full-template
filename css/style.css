@@ -1,52 +1,98 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Oswald", sans-serif;
+    background-color: green;
 }
 
-nav ul {
-    list-style: none;
-    background-color: #4a4a4f;
-    text-align: center;
-    padding: 0;
-    margin:0;
+#gameBox {
+    width: 500px;
+    height: 500px;
+    display: inline-grid;
+    background-color: grey;
 }
 
-nav li {
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    display: inline-block;
-    margin: 2.5%;
+.tile {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    cursor: pointer;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
+.tileOne {
+    background-color: blue;
 }
 
-nav a:hover {
-    background-color: #fff;
-    color: #4a4a4f;
+.tileTwo {
+    background-color: yellow;
 }
 
-.card {
-    float: left; /* all the .cards will align side by side*/
-    width: 20%; /* they will all be 20% of the browser space width*/
-    margin-left: 10%; /* provides white space from the left edge of the browser*/
-
+.tileThree {
+    background-color: pink;
 }
 
-.card a {
-    text-align: center;
+.tileFour {
+    background-color: purple;
 }
 
-img {
-    width: 100%; /* 100% of the .card container css which is 20% of screen*/
-    height: 180px;
+
+.tile:hover {
+    border: 1px solid pink;
+    box-shadow: inset 0px 0px 0px 3px pink;
 }
 
-h1 {
-    text-align: center;
+
+.active {
+    background-color: white;
+}
+
+
+
+/*body {
+  background-color: black;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.panel {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.panel:hover {
+  /* border: 1px solid red; 
+  box-shadow: inset 0px 0px 0px 3px cyan;
+  box-sizing: border-box;
+}
+
+.bottom-right-panel {
+  border-bottom-right-radius: 100%;
+  background-color: red;
+}
+
+.bottom-left-panel {
+  border-bottom-left-radius: 100%;
+  background-color: blue;
+}
+.top-right-panel {
+  border-top-right-radius: 100%;
+  background-color: green;
+}
+.top-left-panel {
+  border-top-left-radius: 100%;
+  background-color: yellow;
+}
+
+.active {
+  background-color: white;
+}
+
+.center {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: black;
+  top: 135px;
+  left: 540px;
 }
